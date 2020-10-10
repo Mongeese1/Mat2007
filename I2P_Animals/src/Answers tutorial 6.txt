@@ -1,0 +1,26 @@
+1.
+vroom
+truck 1
+car 2
+1b. The call system.out.pritnln(mycar) will print vroom vroom, since the tostring
+returns twice
+mycar.m1(); will print truck 1
+mycar.m2(); will print car 1 since the m2() method in the truck class ovverides
+the m2 method in the car class
+
+2.this will print the system print call first for the first element of the array
+which is A which extends B which extends C, so A when printed will call on its
+superclass B and print b
+then the method calls will be printed for each element of the array
+the call A.method1 will print c 1 since A does not have a method1 defined, nor does
+its immediate superclass B
+the call A.method2 will print a 2 since method 2 exists in the class A
+the call to print B will print b since it has a tostring method
+the call b.method1 will print c 1 since b does not have a method1 and it's immediate superclass C does
+the call b.method2 will print b 2 since b has a method2
+the call to print c will print c since c has a toString method
+the call c.method1 will print c 1 since c has a method1 defined
+the call c.method2 will print c 2 since c has a method 2 defined
+the call to print D will print D since D extends B and D does not have a toString method but B does
+the call d.method 1 will print d 1 since d has a method1 defined
+the call d.method2 will print b 2 since D does not have a method2 defined but its superclass B does
