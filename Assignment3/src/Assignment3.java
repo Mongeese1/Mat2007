@@ -26,5 +26,9 @@ public static void main(String[] args) {
 	System.out.println("does rectangle newrect2 contain point E? : " + newrect2.hasPoint(E));
 	newrect.scale(2,4);
 	System.out.println("The rectangle new rect scaled by 2,4 is" + newrect);
+	Rectangle Cbound = C.bound();
+	System.out.println("The rectangle bound by c scaled by 3 is: " + Cbound);
+	Rectangle newrect2bound = newrect2.bound();
+	System.out.println("The rectangle bound by newrect2 is: " + newrect2bound);
 }
 }
