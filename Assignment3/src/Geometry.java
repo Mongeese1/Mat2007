@@ -6,7 +6,7 @@ public interface Geometry {
 	public Rectangle bound();
 	public void translate(final double dx, final double dy);
 	public void scale(final double sx, final double sy);
-	
+	public void scale(final double scale);//for circle
 	/**
 	* @return Distance between points a and b.
 	* This method is static so can be implemented in the interface.
@@ -17,5 +17,6 @@ public interface Geometry {
 	final double dy = b.y - a.y;
 	return Math.sqrt(dx * dx + dy * dy);
 	}
-
+	
+	
 }

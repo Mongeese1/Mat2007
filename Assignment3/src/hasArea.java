@@ -4,4 +4,5 @@ public interface hasArea {
 	public double perimeter();
 	public boolean hasPoint(Point check);
 	//boolean hasPoint(Point check);
+	public void scale(double factor);
 }

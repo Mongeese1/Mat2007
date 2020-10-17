@@ -50,4 +50,13 @@ public class Line implements Geometry,HasLength{
 		len = Math.sqrt(len);
 		return len;
 	}
+	@Override
+	public void scale(double scale) {//circle scale unused here
+		// TODO Auto-generated method stub
+		}
+	@Override
+	public String toString() {
+		String str = "The line connects the points " + this.point_a +" " + this.point_b + " and has a length of " + this.length();
+		return str;
+	}
 }	

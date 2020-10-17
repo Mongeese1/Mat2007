@@ -25,8 +25,8 @@ public class Point implements Geometry {
 	@Override
 	public void translate(double dx, double dy) {
 		// TODO Auto-generated method stub
-		x = x+dx;
-		y = y+dy;
+		this.x = x+dx;
+		this.y = y+dy;
 	}
 
 	@Override
@@ -34,6 +34,17 @@ public class Point implements Geometry {
 		// TODO Auto-generated method stub
 		;
 		
+	}
+
+	@Override
+	public void scale(double scale) {//for circle unused here
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public String toString() {
+		String str = "(" + this.x + " , " + this.y + ")";
+		return str;
 	}
 
 }

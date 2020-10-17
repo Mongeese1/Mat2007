@@ -60,23 +60,23 @@ public class Rectangle implements Geometry,hasArea{
 	@Override
 	public void translate(double dx, double dy) {
 		// TODO Auto-generated method stub
-		pt.x = pt.x+dx;
-		pt.y = pt.y+dy;
+		this.pt.x = pt.x+dx;
+		this.pt.y = pt.y+dy;
 		
 	}
 
 	@Override
 	public void scale(double sx, double sy) {
 		// TODO Auto-generated method stub
-		h = sx*h;
-		w = sy*w;
+		this.h = sx*h;
+		this.w = sy*w;
 		
 	}
 
 //	@Override
 //	public double length() {
 		// TODO Auto-generated method stub
-		//not sure if this is meant to return the perimeter or what, some more specific instructions would be appreciated
+	
 //		double p_tot = (this.h+this.w) * 2;
 //		return p_tot;
 //	}
@@ -91,7 +91,7 @@ public class Rectangle implements Geometry,hasArea{
 	@Override
 	public double perimeter() {
 		// TODO Auto-generated method stub
-		return this.h + this.w *2;
+		return this.h * 2 + this.w *2;
 	}
 
 	@Override
@@ -104,4 +104,14 @@ public class Rectangle implements Geometry,hasArea{
 		return flag;
 	}
 
+	@Override
+	public void scale(double scale) {//circle scale unused here
+		// TODO Auto-generated method stub
+	}
+	@Override
+	public String toString() {
+		String str = "The rectangle has a corner point "  + this.pt + " and a height and width of " + this.h + " , " + this.w + " Its area is "  + this.area() +" and its perimeter is " + this.perimeter();
+		
+		return str;
+	}
 }
